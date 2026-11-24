@@ -18,3 +18,7 @@ botoesCurtir.forEach(function(botaoCurtir){
 
 
 const btnTema = document.querySelector(".btn-tema");
+tnTema.addEventListener("click", mudarTema);
+function mudarTema(){
+    document.body.classList.toggle("tema-escuro");
+}
