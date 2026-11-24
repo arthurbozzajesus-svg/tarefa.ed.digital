@@ -1,3 +1,24 @@
+:root {
+    --cor-fundo: #727272;
+    --cor-texto: #000000;
+    --cor-principal: #376992;
+    --cor-secundaria: #9989b3;
+    --cor-hover: #bd117b;
+    --superficie: #b8b7b6;
+    --cor-card: #ffffff;
+    --cor-legenda: #201414;
+    --cor-clara: hsl(221, 23%, 24%), 100%, 75%;
+    --cor-rodape: #ec060688;
+}
+.tema-escuro {
+    --cor-fundo: #121212;
+    --cor-texto: #9e2a2a;
+    --cor-principal: #21af39;
+    --cor-superficie: #1e1e1e;
+    --cor-card: #2b2530;
+}
+
+
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
@@ -14,6 +35,8 @@ header {
 
 h1 {
     font-size: 36px;
+
+
 }
 
 h2 {
@@ -32,9 +55,7 @@ nav {
 nav a {
     color: var(--cor-clara);
     text-decoration: none;
-    background-color:var(--cor-secundaria);
-    padding: 10px 15px;
-    border-radius: 8px;
+    background-color: var(--cor-secundaria);
     margin: 5px;
     display: inline-block;
 }
@@ -49,10 +70,10 @@ main {
 }
 
 section {
-    background-color: var(--cor-superficie);
+    background-color: var(--superficie);
     margin: 20px 0;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 12px
 }
 
 img {
@@ -76,6 +97,7 @@ figcaption {
     margin: 15px 0;
     border-left: 6px solid var(--cor-principal);
     border-radius: 10px;
+    flex: 1 1 300px;
 }
 
 .card h3 {
@@ -90,10 +112,10 @@ footer {
     margin-top: 30px;
 }
 
-button:hover {
+button {
     background-color: var(--cor-principal);
     color: var(--cor-clara);
-    border:none;
+    border: none;
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
@@ -101,12 +123,31 @@ button:hover {
 }
 
 button:hover {
-    background-color:var(--cor-hover);
-
+    background-color: var(--cor-hover);
 }
 
 .curtir {
     display: block;
-    width: it-content;
+    width: fit-content;
     margin: 20px auto;
+}
+.galeira{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cards-curiosidades {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.btn-tema {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 22px;
 }
